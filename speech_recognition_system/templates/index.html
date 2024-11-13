@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator with Speech</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Language Translator</h1>
+        <textarea id="inputText" placeholder="Type or speak here..."></textarea>
+        <button onclick="recordSpeech()">Record Speech</button>
+        <select id="languageSelect">
+            <option value="fr">French</option>
+            <option value="es">Spanish</option>
+            <option value="ta">Tamil</option>
+            <!-- Add more languages here -->
+        </select>
+        <button onclick="translateText()">Translate</button>
+       
+        <p id="translatedText"></p>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

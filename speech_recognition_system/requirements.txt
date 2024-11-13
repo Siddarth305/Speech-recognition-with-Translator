@@ -1,0 +1,4 @@
+Flask
+googletrans==4.0.0-rc1
+SpeechRecognition
+gTTS  # For text-to-speech functionality
